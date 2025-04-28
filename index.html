@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>RECETAS</h1>
+    </header>
+    <main>
+        <section class="click">
+            <a href="#crear"><h2>Crear receta</h2></a>
+            <a href="#lista"><h2>Ver receta</h2></a>
+        </section>
+        <section id="Crear" class="section_formulario">
+            <h1>Crea una receta nueva</h1>
+            <form action="?" id="formCrear" class="formulario">
+                <input type="text" name="nombre" placeholder="Nombre de la receta">
+                <input type="text" name="ingredientes" placeholder="Ingredientes">
+                <input type="text" name="instrucciones" placeholder="Instrucciones">
+                <input type="number" name="tiempo" placeholder="Tiempo de preparacion en minutos" max="60" min="5">
+                <input type="number" name="porciones" max="20" min="1" placeholder="Porciones">
+                <span>Categoria</span><select name="categoria" id="categoria">
+                    <option value="Desayuno">Desayuno</option>
+                    <option value="Almuerzo">Almuerzo</option>
+                    <option value="Cena">Cena</option>
+                </select>
+                <span>Nivel de dificultad</span><select name="dificultad" id="dificultad">
+                    <option value="Fácil">Fácil</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Dificil">Dificil</option>
+                </select>
+                <button id="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="section_buscar">
+            <div>
+                <form action="?" id="busqueda" class="form_buscar">
+                <h2>Buscar</h2>
+                <input type="text"name="bucarNombre" id="bucarNombre">
+                <span>Categoria</span><select name="categoria" id="categoria">
+                    <option value="desayuno">Desayuno</option>
+                    <option value="almuerzo">Almuerzo</option>
+                    <option value="cena">Cena</option>
+                </select>
+                <span>Nivel de dificultad</span><select name="dificultad" id="dificultad">
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Medio</option>
+                    <option value="dificil">Dificil</option>
+                </select>
+                <button id="botonBuscar">Buscar</button>
+            </form>
+            </div>
+            <article id="lista" class="article_lista">
+
+            </article>
+        </section>
+    </main>
+</body>
+</html>

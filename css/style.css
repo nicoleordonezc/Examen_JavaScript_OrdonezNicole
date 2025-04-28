@@ -1,0 +1,67 @@
+*{
+    padding: 20px;
+    margin: 0;
+    font-family:Arial;
+}
+
+main{
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+    h1{
+        color: darkkhaki;
+    }
+}
+.click{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    a{
+        text-decoration: none;
+        color: darkslategrey;
+    }
+}
+
+.section_formulario{
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    span{
+        font-family:Arial;
+        font-size: 20px;
+    }
+
+}
+.section_buscar{
+
+}
+.form_buscar{
+    display: flex;
+    gap: 10px;
+
+}
+.article_lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.div_contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: pink;
+
+}
+
